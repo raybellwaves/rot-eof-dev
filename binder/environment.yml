@@ -1,5 +1,6 @@
 channels:
   - conda-forge
 dependencies:
+  - numpy
   - xarray
   - netCDF4
