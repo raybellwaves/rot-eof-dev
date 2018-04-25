@@ -8,4 +8,4 @@ dependencies:
   - cartopy
   - ioam
   - holoviews
-  - geoviews
+  - geoviews=1.4.3
