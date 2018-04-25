@@ -4,3 +4,4 @@ dependencies:
   - numpy
   - xarray
   - netCDF4
+  - matplotlib
