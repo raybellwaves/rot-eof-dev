@@ -6,3 +6,6 @@ dependencies:
   - netCDF4
   - matplotlib
   - cartopy
+  - ioam
+  - holoviews
+  - geoviews
