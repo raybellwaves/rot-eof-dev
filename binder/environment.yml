@@ -1,11 +1,11 @@
 channels:
   - conda-forge
+  - ioam
 dependencies:
   - numpy
   - xarray
   - netCDF4
   - matplotlib
   - cartopy
-  - ioam
   - holoviews
   - geoviews=1.4.3
