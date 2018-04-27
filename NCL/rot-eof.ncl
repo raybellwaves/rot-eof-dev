@@ -57,6 +57,7 @@ f = addfile(fin,"r")
   x      = wvar(lat|:,lon|:,time|:)
 
   eof    = eofunc_Wrap(x, neof, optEOF) ; optEOF is flase
+  printVarSummary( eof )
   print("eof: min="+min(eof)+"   max="+max(eof) )    
   eof_ts = eofunc_ts_Wrap (x, eof, optETS)
   print("eof size")
