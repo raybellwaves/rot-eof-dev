@@ -17,7 +17,7 @@ load "contributed.ncl"
   yrStrt = 1999
   yrLast = 2016
 
-  season = "JFM"               ; choose Jan-Feb-Mar seasonal mean
+  season = "DJF"               
 
   neof   =  10                 ; number of standard EOFs to calculate
   optEOF = False      
@@ -77,7 +77,7 @@ f = addfile(fin,"r")
 ; PLOTS
 ;============================================================
 
-  wks = gsn_open_wks("png","eof")         ; send graphics to PNG file
+  wks = gsn_open_wks("png",season+"_eof")         ; send graphics to PNG file
   plot = new(neof,graphic)                ; create graphic array
                                           ; only needed if paneling
 ; EOF patterns
@@ -118,7 +118,7 @@ f = addfile(fin,"r")
   gsn_panel(wks,plot(0:3),(/2,2/),resP)     ; only plot the 1st four
  ;gsn_panel(wks,plot,(/neof/2,2/),resP)     ; now draw as one plot
 
-  wks = gsn_open_wks("png","rot_eof")         ; send graphics to PNG file
+  wks = gsn_open_wks("png",season+"_rot_eof")         ; send graphics to PNG file
   plot = new(neof,graphic)                ; create graphic array
                                           ; only needed if paneling
 ; EOF patterns
