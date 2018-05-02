@@ -7,7 +7,7 @@ load "gsn_csm.ncl"
 load "contributed.ncl"
 
   vname  = "gph500hPa"               ; variable name
-  fname  = "ERAI_z500_monthly_1999-2016.nc"   ; CDC: NCEP Reanalysis
+  fname  = "ERAI_z500_monthly_1979-2017.nc"   ; CDC: NCEP Reanalysis
 
   levP   = 500                 ; desired level
 
