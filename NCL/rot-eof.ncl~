@@ -19,7 +19,7 @@ indir = "/projects/rsmas/kirtman/rxb826/DATA/NCEP/gph500hPa_monthly/raw_monthly_
   yrStrt = 1950
   yrLast = 2000
 
-  season = "NDJ"               
+  season = "OND"               
 
   neof   =  10                 ; number of standard EOFs to calculate
   optEOF = False      

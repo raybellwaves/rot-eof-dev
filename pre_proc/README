@@ -1,0 +1,15 @@
+downloaded from ftp://ftp.cdc.noaa.gov/Datasets/ncep.reanalysis.derived/pressure/hgt.mon.mean.nc
+
+Extract 1950-2000
+ncks -d time,24,635 hgt.mon.mean.nc hgt.mon.mean_1950-2000.nc
+
+Extract 500hPa
+ncks -O -d level,5 hgt.mon.mean_1950-2000.nc NCEP_z500_monthly_1950-2000.nc
+ncwa -O -a level NCEP_z500_monthly_1950-2000.nc NCEP_z500_monthly_1950-2000.nc
+ncks -x -v level NCEP_z500_monthly_1950-2000.nc NCEP_z500_monthly_1950-2000.nc
+
+Reverse latitude
+ncpdq -O -a -lat NCEP_z500_monthly_1950-2000.nc NCEP_z500_monthly_1950-2000.nc
+
+Extract NH
+ncks -O -d lon,0.0,360.0 -d lat,20.0,90.0 NCEP_z500_monthly_1950-2000.nc NCEP_z500_monthly_1950-2000_NH.nc
